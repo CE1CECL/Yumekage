@@ -18,7 +18,7 @@ jobs:
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: msbuild .
+      run: msbuild . /p:Platform=x64
 
     - name: Upload
       uses: actions/upload-artifact@v3
